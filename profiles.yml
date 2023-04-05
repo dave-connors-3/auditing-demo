@@ -2,12 +2,20 @@ diffle_shop:
   target: dev
   outputs:
     dev:
-      type: duckdb
+      dbname: postgres
+      host: localhost
+      password: dbt_dave
+      port: 5432
       schema: dev
-      path: 'diffle_shop.duckdb'
-      threads: 24
+      threads: 2
+      type: postgres
+      user: daveconnors
     prod:
-      type: duckdb
+      dbname: postgres
+      host: localhost
+      password: dbt_dave
+      port: 5432
       schema: prod
-      path: 'diffle_shop.duckdb'
-      threads: 24
+      threads: 2
+      type: postgres
+      user: daveconnors

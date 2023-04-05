@@ -7,7 +7,7 @@ profile: 'diffle_shop'
 vars:
   # configuration for data-diff tool
   data_diff:
-    prod_database: main
+    prod_database: postgres
     prod_schema: prod
 
 models:
